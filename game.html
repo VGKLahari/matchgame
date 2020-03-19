@@ -1,9 +1,74 @@
-<!DOCTYPE html>
+
 <html >
     <head>
         <title>Match Pairing Game</title>
+        <link rel="stylesheet" href="game.css">
     </head>
     <body>
+        <script>
+            var count=0
+            var fruits={'o':"orange.png",'b':"banana.jpg",'a':"apple.gif","g":"grape.png"}
+            function match(c)
+            {
+                var i=c+'i'
+                console.log("hello",c,i)
+                count=count+1
+                var f=c[0]
+                console.log(fruits[f])
+                document.getElementById(i).src=fruits[f];
+            }
+        </script>
         <h1 style="text-align:center;color:purple;font-family: fantasy ;">MATCH PAIRING GAME</h6>
+        <table id='mainbox' align="center" >
+            <tr>
+                <td><button id='o1' class='o' onclick="match(this.id);"><img class='oi' id="o1i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='g1'class='g' onclick="match(this.id);"><img  class='gi' id="g1i" src="fruit.jpg " height=100vh width=100vw></button></td>
+                <td><button id='b1' class='b' onclick="match(this.id);"><img class='bi' id="b1i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='a1' class='a' onclick="match(this.id);"><img class='ai' id="a1i" src="fruit.jpg" height=100vh width=100vw></button></td>
+            </tr>
+            <tr>
+                <td><button id='o2' class='o' onclick="match(this.id);"><img class='oi' id="o2i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='a2' class='a' onclick="match(this.id);"><img class='ai' id="a2i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='b2' class='b' onclick="match(this.id);"><img class='bi' id="b2i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='g2' class='g' onclick="match(this.id);"><img class='gi'id="g2i" src="fruit.jpg" height=100vh width=100vw></button></td>
+            </tr>
+            <tr>
+                <td><button id='g3' class='g' onclick="match(this.id);"><img class='gi' id="g3i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='o3' class='o' onclick="match(this.id);"><img class='oi' id="o3i"  src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='a3' class='a' onclick="match(this.id);"><img class='ai' id="a3i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='b3' class='b' onclick="match(this.id);"><img class='bi' id="b3i"  src="fruit.jpg" height=100vh width=100vw></button></td>
+            </tr>
+            <tr>
+                <td><button id='a4' class='a' onclick="match(this.id);"><img class='ai' id="a4i" src="fruit.jpg " height=100vh width=100vw></button></td>
+                <td><button id='g4' class='g' onclick="match(this.id);"><img class='gi' id="g4i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='b4' class='b' onclick="match(this.id);"><img class='bi' id="b4i" src="fruit.jpg" height=100vh width=100vw></button></td>
+                <td><button id='o4' class='o' onclick="match(this.id);"><img class='oi' id="o4i" src="fruit.jpg" height=100vh width=100vw></button></td>
+            </tr>
+               <!--<tr>
+                    <td><button class='o'><img src="orange.png" height=100vh width=100vw></button></td>
+                    <td><button class='g'><img src="grape.png " height=100vh width=100vw></button></td>
+                    <td><button class='b'><img src="banana.jpg" height=100vh width=100vw></button></td>
+                    <td><button class='a'><img src="apple.gif" height=100vh width=100vw></button></td>
+                </tr>
+                <tr>
+                    <td><button class='o'><img src="orange.png" height=100vh width=100vw></button></td>
+                    <td><button class='a'><img src="apple.gif" height=100vh width=100vw></button></td>
+                    <td><button class='b'><img src="banana.jpg" height=100vh width=100vw></button></td>
+                    <td><button class='g'><img src="grape.png" height=100vh width=100vw></button></td>
+                </tr>
+                <tr>
+                    <td><button class='g'><img src="grape.png" height=100vh width=100vw></button></td>
+                    <td><button class='o'><img src="orange.png" height=100vh width=100vw></button></td>
+                    <td><button class='a'><img src="apple.gif" height=100vh width=100vw></button></td>
+                    <td><button class='b'><img src="banana.jpg" height=100vh width=100vw></button></td>
+                </tr>
+                <tr>
+                    <td><button class='a'><img src="apple.gif" height=100vh width=100vw></button></td>
+                    <td><button class='g'><img src="grape.png" height=100vh width=100vw></button></td>
+                    <td><button class='b'><img src="banana.jpg" height=100vh width=100vw></button></td>
+                    <td><button class='o'><img src="orange.png" height=100vh width=100vw></button></td>
+                </tr>-->
+        </table>
+            
     </body>
 </html>
