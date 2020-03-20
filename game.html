@@ -6,16 +6,51 @@
     </head>
     <body>
         <script>
-            var count=0
+            var flag=0
             var fruits={'o':"orange.png",'b':"banana.jpg",'a':"apple.gif","g":"grape.png"}
+            var preimageid
+            var prefruit
+            var f
+            var i
+            function secondndcard()
+            {
+                if(prefruit!=f){
+                        document.getElementById(preimageid).src="fruit.jpg";
+                        document.getElementById(i).src="fruit.jpg";
+                        
+                       
+                    }
+            }
             function match(c)
             {
-                var i=c+'i'
-                console.log("hello",c,i)
-                count=count+1
-                var f=c[0]
-                console.log(fruits[f])
-                document.getElementById(i).src=fruits[f];
+                var j
+                 i=c+'i'
+                 f=c[0]
+                if(flag==0)
+                {
+                    document.getElementById(i).src=fruits[f];
+                    preimageid=i;prebuttonid=c;prefruit=f
+                    flag=1
+                }
+                else{
+                   
+                   document.getElementById(i).src=fruits[f];
+
+                    console.log(i,f,fruits[f])
+                    setTimeout(secondndcard,500)
+                    
+                    /*if(0){
+                        document.getElementById(i).src="fruit.jpg";
+                        document.getElementById(preimageid).src="fruit.jpg";
+                        
+                    }*/
+                  
+                    flag=0
+
+                }
+                
+
+                
             }
         </script>
         <h1 style="text-align:center;color:purple;font-family: fantasy ;">MATCH PAIRING GAME</h6>

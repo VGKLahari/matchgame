@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>sample</title>
+</head>
+<body>
+<script>
+function xyz(x)
+{
+document.getElementById(x+'i').src="fruit.jpg"
+}
+function abc(x)
+{
+
+document.getElementById(x).src="orange.png"
+setTimeout(xyz(x+'i'),2000);
+
+
+}
+</script>
+<button id='a' onclick="abc(this.id)"><img src="fruit.jpg" id="ai"></button>
+</body>
+</html>

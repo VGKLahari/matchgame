@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>sample</title>
+</head>
+<body>
+<script>
+function abc(x)
+{
+document.getElementById(x+'i').src="orange.png"
+document.getElementById(x+'i').src="fruit.jpg"
+}
+</script>
+<button id='a' onclick="abc(this.id)"><img src="fruit.jpg" id="ai"></button>
+</body>
+</html>
